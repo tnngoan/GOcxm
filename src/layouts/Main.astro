@@ -1,0 +1,62 @@
+---
+const title = "GOcxm";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <link
+            href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+        <title>{title}</title>
+    </head>
+    <body>
+        <nav class="flex justify-between items-center">
+            <div>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/solution">Solution</a>
+            </div>
+            <i class="fa fa-4x fa-thin fa-bars"></i>
+        </nav>
+        <div >
+            <slot />
+        </div>
+        <footer>
+            <div class="flex justify-between">
+                <div>
+                    <img />
+                    <p>670 Calendonia Road, Suite 300</p>
+                    <p>Toronto, Ontario</p>
+                    <p>+1 (877) 490-0003</p>
+                </div>
+                <div>
+                    <div>
+                        <p>Connect with Go</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-2x fa-brands fa-facebook"></i>
+                        <i class="fa fa-2x fa-brands fa-instagram"></i>
+                        <i class="fa fa-2x fa-brands fa-twitter"></i>
+                        <i class="fa fa-2x fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-black" />
+            <div class="flex justify-between">
+                <div>
+                    <p>©2023 gocxm.com All rights reserved.</p>
+                </div>
+                <div>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Accessibility statement</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
