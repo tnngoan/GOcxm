@@ -9,12 +9,13 @@ const title = "GOcxm";
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content={Astro.generator} />
-        <link
-            href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-            rel="stylesheet"
-        />
-        <title>{title}</title>
-    </head>
+        <script
+            src="https://kit.fontawesome.com/b3e7c9e7bc.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>{title}</title></head
+    >
+
     <body>
         <nav class="flex justify-between items-center">
             <div>
@@ -22,9 +23,9 @@ const title = "GOcxm";
                 <a href="/about">About</a>
                 <a href="/solution">Solution</a>
             </div>
-            <i class="fa fa-4x fa-thin fa-bars"></i>
+            <i class="fa fa-4x fa-solid fa-bars"></i>
         </nav>
-        <div >
+        <div>
             <slot />
         </div>
         <footer>
@@ -39,11 +40,11 @@ const title = "GOcxm";
                     <div>
                         <p>Connect with Go</p>
                     </div>
-                    <div>
-                        <i class="fa fa-2x fa-brands fa-facebook"></i>
-                        <i class="fa fa-2x fa-brands fa-instagram"></i>
-                        <i class="fa fa-2x fa-brands fa-twitter"></i>
-                        <i class="fa fa-2x fa-brands fa-linkedin"></i>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-2x fa-brands fa-facebook-f"></i>
+                        <i class="fa-2x fa-brands fa-instagram"></i>
+                        <i class="fa-2xl fa-brands fa-twitter"></i>
+                        <i class="fa-2x fa-brands fa-linkedin-in"></i>
                     </div>
                 </div>
             </div>
