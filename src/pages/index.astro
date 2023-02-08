@@ -1,10 +1,35 @@
 ---
 import Layout from "../layouts/Main.astro";
 import "../styles/index.css";
+import ContentDropdown from "../components/ContentDropdown.svelte";
+const pageTitle = "Welcome to GOcxm";
+const dropContent = () => {
+	console.log("show content now");
+};
+const tableContent = [
+	{
+		title: "Table 1",
+		content:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quisquam.",
+	},
+	{
+		title: "Table 2",
+		content:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quisquam.",
+	},
+	{
+		title: "Table 3",
+		content:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quisquam.",
+	},
+];
 ---
 
 <Layout>
-    <div class="h-screen">
-		<h1>Welcome to GOcxm</h1>
+	<div class="h-screen text-sky-600">
+		<h1>{pageTitle}</h1>
+		<div>
+			{tableContent.map((link) => <ContentDropdown label={link.title} content={link.content} />)}
 		</div>
+	</div>
 </Layout>
