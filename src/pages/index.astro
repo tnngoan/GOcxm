@@ -1,11 +1,9 @@
 ---
 import Layout from "../layouts/Main.astro";
 import "../styles/index.css";
-import ContentDropdown from "../components/ContentDropdown.svelte";
+import ContentDropdown from "../components/ContentDropdown.jsx";
 const pageTitle = "Welcome to GOcxm";
-const dropContent = () => {
-	console.log("show content now");
-};
+
 const tableContent = [
 	{
 		title: "Table 1",
@@ -29,7 +27,7 @@ const tableContent = [
 	<div class="h-screen text-sky-600">
 		<h1>{pageTitle}</h1>
 		<div>
-			{tableContent.map((link) => <ContentDropdown label={link.title} content={link.content} />)}
+			<ContentDropdown list={tableContent} slot="pageTitle" client:load />
 		</div>
 	</div>
 </Layout>
