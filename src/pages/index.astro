@@ -27,7 +27,11 @@ const tableContent = [
 	<div class="h-screen text-sky-600">
 		<h1>{pageTitle}</h1>
 		<div>
-			<ContentDropdown list={tableContent} slot="pageTitle" client:load />
+			{
+				tableContent.map((item, index) => (
+					<ContentDropdown item={item} key={index} client:load />
+				))
+			}
 		</div>
 	</div>
 </Layout>
