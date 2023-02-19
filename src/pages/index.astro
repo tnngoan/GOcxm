@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Main.astro";
 import "../styles/index.css";
+import Sidebar from "../components/Sidebar.jsx";
 import ContentDropdown from "../components/ContentDropdown.jsx";
 const pageTitle = "Welcome to GOcxm";
 
@@ -24,8 +25,23 @@ const tableContent = [
 ---
 
 <Layout>
-	<div class="h-screen text-sky-600">
-		<h1>{pageTitle}</h1>
+	<div class="h-screen jumbotron-bg">
+		<Sidebar />
+		<div class="px-10 flex-cols justify-around h-screen">
+			<img src="../../GO-icon.jpg" />
+			<h1 class="header-text py-16">
+				Empowering Brands with <br />
+				Technology to Build & Personalize <br />
+				Meaningful Relationships
+			</h1>
+			<p class="sub-header-text">
+				A platform that arms you with tools, intelligence and
+				flexibility to <br /> engage, convert, and nurture consumers
+			</p>
+			<div class="py-16">
+				<button class="p-8 py-2 rounded-lg learn-btn">Learn More</button>
+			</div>
+		</div>
 		<div>
 			{
 				tableContent.map((item, index) => (

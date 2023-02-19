@@ -1,0 +1,22 @@
+.jumbotron-bg {
+    width: auto;
+    height: 800px;
+    background-image: url("../images/BG-Fold1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #060606;
+}
+
+.header-text {
+    color: #ff951f;
+    font-family: "Monaco", "Lucida Console", Monospace;
+}
+
+.sub-header-text {
+    color: white;
+    font-size: 20px;
+}
+
+.learn-btn {
+    background-color: #2D69F6;
+}
