@@ -1,9 +1,62 @@
 ---
 import Layout from "../layouts/Main.astro";
+import "../styles/index.css";
+import "../styles/solution.css";
+const cardsDeck = [
+    {
+        image: "../../images/pic-businessman_2.png",
+        title: "Reporting",
+        content: ["SKUs - Locations", "Redemptions - Disbursements"],
+    },
+    {
+        image: "../../images/pic-businessman_2.png",
+        title: "Reporting",
+        content: ["SKUs - Locations", "Redemptions - Disbursements"],
+    },
+    {
+        image: "../../images/pic-businessman_2.png",
+        title: "Reporting",
+        content: ["SKUs - Locations", "Redemptions - Disbursements"],
+    },
+    {
+        image: "../../images/pic-businessman_2.png",
+        title: "Reporting",
+        content: ["SKUs - Locations", "Redemptions - Disbursements"],
+    },
+    {
+        image: "../../images/pic-businessman_2.png",
+        title: "Reporting",
+        content: ["SKUs - Locations", "Redemptions - Disbursements"],
+    },
+    {
+        image: "../../images/pic-businessman_2.png",
+        title: "Reporting",
+        content: ["SKUs - Locations", "Redemptions - Disbursements"],
+    },
+];
 ---
 
 <Layout>
     <div class="h-screen">
         <h1>GOcxm solution</h1>
+        <div class="relative block w-full border-box">
+            <div class="w-full overflow-hidden">
+                <div class="slider relative">
+                    {
+                        cardsDeck.map((item, index) => (
+                            <div class="item relative block float-left border-box">
+                                <div class="frame relative">
+                                    <div class="frame-box front">
+                                        <h1>{item.title}</h1>
+                                    </div>
+                                    <div class="frame-box left"></div>
+                                    <div class="frame-box right"></div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
     </div>
 </Layout>
