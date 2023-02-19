@@ -3,51 +3,168 @@ import Layout from "../layouts/Main.astro";
 import "../styles/index.css";
 import Sidebar from "../components/Sidebar.jsx";
 import ContentDropdown from "../components/ContentDropdown.jsx";
+import ListItem from "../components/ListItem.jsx";
+
 const pageTitle = "Welcome to GOcxm";
 
 const tableContent = [
-	{
-		title: "Table 1",
-		content:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quisquam.",
-	},
-	{
-		title: "Table 2",
-		content:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quisquam.",
-	},
-	{
-		title: "Table 3",
-		content:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quisquam.",
-	},
+  {
+    title: "Mobile First Technology",
+    content: "Real-time pivoting",
+  },
+  {
+    title: "Flexible Loyalty",
+    content: "Customizable modules",
+  },
+  {
+    title: "Turn Key Solutions",
+    content: "Personalization and retargeting",
+  },
+];
+
+const list = [
+  {
+    src: "../../icon-blue.png",
+    title: "Contests & Promotions",
+    content:
+      "Get the attention of consumers and keep them engaged with a consistent on-premise & digital, omnichannel execution",
+  },
+  {
+    src: "../../icon-blue.png",
+    title: "Purchase Verification",
+    content:
+      "Use software to extract consumer purchasing data and generate real-time insights",
+  },
+  {
+    src: "../../icon-blue.png",
+    title: "Loyalty & Rewards",
+    content:
+      "View customers as personalized connections for long term relationships, rather than transactions",
+  },
+  {
+    src: "../../icon-blue.png",
+    title: "Insights & Analytics",
+    content:
+      "Business Intelligence on zero-party data seamlessly captured through contests & promotions",
+  },
+  {
+    src: "../../icon-blue.png",
+    title: "Managed Services",
+    content:
+      "Expertise in program compliance, accountability and campaign execution",
+  },
 ];
 ---
 
 <Layout>
-	<div class="h-screen jumbotron-bg">
-		<Sidebar />
-		<div class="px-10 flex-cols justify-around h-screen">
-			<img src="../../GO-icon.jpg" />
-			<h1 class="header-text py-16">
-				Empowering Brands with <br />
-				Technology to Build & Personalize <br />
-				Meaningful Relationships
-			</h1>
-			<p class="sub-header-text">
-				A platform that arms you with tools, intelligence and
-				flexibility to <br /> engage, convert, and nurture consumers
-			</p>
-			<div class="py-16">
-				<button class="p-8 py-2 rounded-lg learn-btn">Learn More</button>
+  <div>
+    <Sidebar />
+    <div>
+      <div class="px-10 flex-cols justify-around jumbotron-bg">
+        <img src="../../GO-icon.jpg" />
+        <h1 class="header-text py-16">
+          Empowering Brands with <br />
+          Technology to Build & Personalize <br />
+          Meaningful Relationships
+        </h1>
+        <p class="sub-header-text">
+          A platform that arms you with tools, intelligence and flexibility to <br
+          /> engage, convert, and nurture consumers
+        </p>
+        <div class="pt-16">
+          <button class="p-8 py-2 rounded-lg learn-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="bg-banner h-36">
+        <p class="float-left text-white tiny-text">TRUSTED BY</p>
+      </div>
+      <div class="sub-jumbotron flex justify-center items-center">
+        <div class="text-center w-1/2">
+          <h2>New Path to Purchase for The Modern Consumer</h2>
+          <p class="py-6 text-white">
+            Today's consumers expect personalized experiences from brands. The
+            more they are understood, the more engaged and loyal they become.
+          </p>
+          <button class="sub-jumbotron-btn text-white px-4 py-2 rounded-md"
+            >Book A Demo</button
+          >
+        </div>
+      </div>
+      <div class="px-6 dashboard">
+        <div class="text-left">
+          <h3 class="header">Amplify Your Engagement</h3>
+          <p class="text-white">
+            By integrating a layer of technology into what you’re already doing
+          </p>
+        </div>
+        <div class="text-white">
+          <div class="flex py-8 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p>
+              Amplify your marketing strategy by influencing actions & interests
+            </p>
+          </div>
+          <div class="flex py-8 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p>Acquire consumer data and build meaningful relationships</p>
+          </div>
+          <div class="flex py-8 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p>
+              Deliver continuous digital engagement. Drive loyalty, market share
+              & sales
+            </p>
+          </div>
+          <div class="flex py-8 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p>
+              Enable data driven strategic decisions and to boost ROI and LTV
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-24 dropdown-section">
+        {
+          tableContent.map((item, index) => (
+            <ContentDropdown item={item} key={index} client:load />
+          ))
+        }
+      </div>
+      <div class="mp4-viewer h-full"></div>
+      <div class="list-section text-white">
+        {list.map((item) => <ListItem item={item} />)}
+        <div class="text-center">
+          <h1>Let's get started!</h1>
+          <button class="px-4 py-2 bg-blue-700 rounded-md">Book a demo</button>
+        </div>
+        <div class="w-full flex">
+          <div class="w-3/5">
+            <p>TESTIMONIAL</p>
+            <h2>Hear What Other Have To Say</h2>
+          </div>
+          <div class="w-2/5 flex">
+            <div>
+              <h4>"Out standing benifits for our promotions"</h4>
+              <p>
+                We have seen the benefit of the GOcxm platform first-hand with
+                our brands. The results while on the lift and learn display
+                outperformed any other promotional activity we have engaged in
+                to date. We are thoroughly impressed and hope to continue
+                leveraging this asset with our retail customers to drive
+                incremental category sales, as well improved performance for our
+                brands.
+              </p>
+            </div>
+            <div>
+				<p class="font-bold">Jakob Ripshtein</p>
+				<p>CEO</p>
+				<p>Fluid Assets Inc.</p>
 			</div>
-		</div>
-		<div>
-			{
-				tableContent.map((item, index) => (
-					<ContentDropdown item={item} key={index} client:load />
-				))
-			}
-		</div>
-	</div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
