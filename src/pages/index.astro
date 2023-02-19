@@ -62,7 +62,7 @@ const list = [
     <div>
       <div class="px-10 flex-cols justify-around jumbotron-bg">
         <img src="../../GO-icon.jpg" />
-        <h1 class="header-text py-16">
+        <h1 class="header-text py-28 text-5xl">
           Empowering Brands with <br />
           Technology to Build & Personalize <br />
           Meaningful Relationships
@@ -72,65 +72,78 @@ const list = [
           /> engage, convert, and nurture consumers
         </p>
         <div class="pt-16">
-          <button class="p-8 py-2 rounded-lg learn-btn">Learn More</button>
-        </div>
-      </div>
-      <div class="bg-banner h-36">
-        <p class="float-left text-white tiny-text">TRUSTED BY</p>
-      </div>
-      <div class="sub-jumbotron flex justify-center items-center">
-        <div class="text-center w-1/2">
-          <h2>New Path to Purchase for The Modern Consumer</h2>
-          <p class="py-6 text-white">
-            Today's consumers expect personalized experiences from brands. The
-            more they are understood, the more engaged and loyal they become.
-          </p>
-          <button class="sub-jumbotron-btn text-white px-4 py-2 rounded-md"
-            >Book A Demo</button
+          <button class="p-10 py-2 rounded-lg learn-btn text-white text-xl"
+            >Learn More</button
           >
         </div>
       </div>
-      <div class="px-6 dashboard">
-        <div class="text-left">
-          <h3 class="header">Amplify Your Engagement</h3>
-          <p class="text-white">
-            By integrating a layer of technology into what you’re already doing
-          </p>
+      <div class="bg-dark">
+        <div class="bg-banner h-36">
+          <p class="float-left text-white tiny-text">TRUSTED BY</p>
         </div>
-        <div class="text-white">
-          <div class="flex py-8 items-center">
-            <img width="48px" src="../../icon-blue.png" />
-            <p>
-              Amplify your marketing strategy by influencing actions & interests
+        <div class="sub-jumbotron flex justify-center items-center">
+          <div class="text-center w-2/5 my-16">
+            <h2 class="font-normal text-5xl">
+              New Path to Purchase for The Modern Consumer
+            </h2>
+            <p class="py-10 text-white text-2xl">
+              Today's consumers expect personalized experiences from brands. The
+              more they are understood, the more engaged and loyal they become.
             </p>
-          </div>
-          <div class="flex py-8 items-center">
-            <img width="48px" src="../../icon-blue.png" />
-            <p>Acquire consumer data and build meaningful relationships</p>
-          </div>
-          <div class="flex py-8 items-center">
-            <img width="48px" src="../../icon-blue.png" />
-            <p>
-              Deliver continuous digital engagement. Drive loyalty, market share
-              & sales
-            </p>
-          </div>
-          <div class="flex py-8 items-center">
-            <img width="48px" src="../../icon-blue.png" />
-            <p>
-              Enable data driven strategic decisions and to boost ROI and LTV
-            </p>
+            <button
+              class="sub-jumbotron-btn text-white px-4 py-2 rounded-md text-xl font-medium"
+              >Book A Demo</button
+            >
           </div>
         </div>
       </div>
-      <div class="py-24 dropdown-section">
+      <div class="px-16 dashboard text-2xl">
+        <div class="text-left">
+          <h3 class="header text-5xl font-normal py-4">
+            Amplify Your Engagement
+          </h3>
+          <p class="text-white text-2xl">
+            By integrating a layer of technology into what you’re already doing
+          </p>
+        </div>
+        <div class="text-2xl w-1/4">
+          <div class="text-white p-8">
+            <div class="flex py-10 items-center">
+              <img width="48px" src="../../icon-blue.png" />
+              <p class="px-4">
+                Amplify your marketing strategy by influencing actions &
+                interests
+              </p>
+            </div>
+            <div class="flex py-10 items-center">
+              <img width="48px" src="../../icon-blue.png" />
+              <p class="px-4">Acquire consumer data and build meaningful relationships</p>
+            </div>
+            <div class="flex py-10 items-center">
+              <img width="48px" src="../../icon-blue.png" />
+              <p class="px-4">
+                Deliver continuous digital engagement. Drive loyalty, market
+                share & sales
+              </p>
+            </div>
+            <div class="flex py-10 items-center">
+              <img width="48px" src="../../icon-blue.png" />
+              <p class="px-4">
+                Enable data driven strategic decisions and to boost ROI and LTV
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-24 dropdown-section">
+        <h3 class="font-bold text-blue-600 text-3xl px-24 py-24">SOLUTIONS</h3>
         {
           tableContent.map((item, index) => (
             <ContentDropdown item={item} key={index} client:load />
           ))
         }
       </div>
-      <div class="mp4-viewer h-full"></div>
+      <div class="mp4-viewer h-screen w-auto"></div>
       <div class="list-section text-white">
         {list.map((item) => <ListItem item={item} />)}
         <div class="text-center">
@@ -138,13 +151,18 @@ const list = [
           <button class="px-4 py-2 bg-blue-700 rounded-md">Book a demo</button>
         </div>
         <div class="w-full flex">
-          <div class="w-3/5">
-            <p>TESTIMONIAL</p>
-            <h2>Hear What Other Have To Say</h2>
+          <div class="w-3/5 font-thin">
+            <p class="text-blue-500">TESTIMONIAL</p>
+            <h2 class="font-light">Hear What Others Have To Say</h2>
           </div>
-          <div class="w-2/5 flex">
-            <div>
-              <h4>"Out standing benifits for our promotions"</h4>
+          <div class="w-2/5 flex-cols">
+            <div class="py-6">
+              <div class="w-36 h-36">
+                <img src="../../pic-businessman_1.png" />
+              </div>
+              <h4 class="header py-6">
+                "Out standing benifits for our promotions"
+              </h4>
               <p>
                 We have seen the benefit of the GOcxm platform first-hand with
                 our brands. The results while on the lift and learn display
@@ -156,12 +174,32 @@ const list = [
               </p>
             </div>
             <div>
-				<p class="font-bold">Jakob Ripshtein</p>
-				<p>CEO</p>
-				<p>Fluid Assets Inc.</p>
-			</div>
-            <div></div>
-            <div></div>
+              <p>Jakob Ripshtein</p>
+              <p class="font-thin">CEO</p>
+              <p>Fluid Assets Inc.</p>
+            </div>
+            <div class="py-6">
+              <div class="w-36 h-36">
+                <img src="../../pic-businessman_2.png" />
+              </div>
+              <h4 class="header py-6">
+                "Out standing benifits for our promotions"
+              </h4>
+              <p>
+                We have seen the benefit of the GOcxm platform first-hand with
+                our brands. The results while on the lift and learn display
+                outperformed any other promotional activity we have engaged in
+                to date. We are thoroughly impressed and hope to continue
+                leveraging this asset with our retail customers to drive
+                incremental category sales, as well improved performance for our
+                brands.
+              </p>
+            </div>
+            <div>
+              <p>Jakob Ripshtein</p>
+              <p class="font-thin">CEO</p>
+              <p>Fluid Assets Inc.</p>
+            </div>
           </div>
         </div>
       </div>

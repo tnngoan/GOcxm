@@ -1,59 +1,79 @@
-.jumbotron-bg {
-  width: auto;
-  height: 800px;
-  background-image: url("../images/BG-Fold1.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #060606;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-.header-text {
-  color: #ff951f;
-  font-family: "Monaco", "Lucida Console", Monospace;
-}
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
 
-.sub-header-text {
-  color: white;
-  font-size: 20px;
-}
+  .jumbotron-bg {
+    width: auto;
+    height: 80vh;
+    background-image: url("../images/BG-Fold1.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #060606;
+  }
 
-.learn-btn {
-  background-color: #2d69f6;
-}
-.bg-banner {
-  background-color: #262626;
-}
-.sub-jumbotron {
-  background-color: #090707ff;
-  color: #ff951f;
-  height: 600px;
-  width: 100%;
-}
-.sub-jumbotron-btn {
-  background-color: #fe5e20;
-}
-.tiny-text {
-  font-size: 12px;
-}
-.dashboard {
-  background-image: url("../images/BG-Fold3.png");
-  background-position: left;
-}
-.dropdown-section {
-  background-color: #111111ff;
-}
-.header {
-  color: #ff951f;
-}
-.mp4-viewer {
-  background-image: url("../images/BG-Fold05.png");
-  background-position: left;
-  background-size: contain;
-  width: 100%;
-}
-.list-section {
-  background-image: url("../images/BG-Fold06and07.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .header-text {
+    color: #ff951f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+  }
+
+  .sub-header-text {
+    color: white;
+    font-size: 24px;
+  }
+
+  .learn-btn {
+    background-color: #2d69f6;
+  }
+
+  .bg-banner {
+    background-color: #262626;
+  }
+
+  .bg-dark {
+    background-color: #090707ff;
+  }
+
+  .sub-jumbotron {
+    background-color: #090707ff;
+    color: #ff951f;
+    height: 600px;
+    width: 100%;
+  }
+
+  .sub-jumbotron-btn {
+    background-color: #fe5e20;
+  }
+
+  .tiny-text {
+    font-size: 12px;
+  }
+
+  .dashboard {
+    background-image: url("../images/BG-Fold3.png");
+    background-position: left;
+  }
+
+  .dropdown-section {
+    background-color: #090707ff;
+  }
+
+  .header {
+    color: #ff951f;
+  }
+
+  .mp4-viewer {
+    background-image: url("../images/BG-Fold05.png");
+    background-position: left;
+    background-size: contain;
+    height: 800px;
+  }
+
+  .list-section {
+    background-image: url("../images/BG-Fold06and07.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

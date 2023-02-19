@@ -1,6 +1,6 @@
 ---
-import Sidebar from "../components/Sidebar";
-
+import "../styles/index.css";
+import "../styles/layout.css";
 const title = "GOcxm";
 ---
 
@@ -19,14 +19,14 @@ const title = "GOcxm";
     >
 
     <body>
-            <slot />
-        <footer>
+        <slot />
+        <footer class="footer-background">
             <div class="flex justify-between">
                 <div>
-                    <img />
+                    <img src="../../logo-footer.png" />
                     <p>670 Calendonia Road, Suite 300</p>
                     <p>Toronto, Ontario</p>
-                    <p>+1 (877) 490-0003</p>
+                    <p class="font-semibold">+1 (877) 490-0003</p>
                 </div>
                 <div>
                     <div>
@@ -45,9 +45,11 @@ const title = "GOcxm";
                 <div>
                     <p>©2023 gocxm.com All rights reserved.</p>
                 </div>
-                <div>
-                    <a href="/privacy">Privacy Policy</a>
-                    <a href="/terms">Accessibility statement</a>
+                <div class="text-black underline">
+                    <a class="text-black capitalize" href="/privacy">PRIVACY POLICY</a>
+                    <a class="text-black" href="/terms"
+                        >ACCESSIBILITY STATEMENT</a
+                    >
                 </div>
             </div>
         </footer>
