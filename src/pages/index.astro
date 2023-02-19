@@ -22,7 +22,7 @@ const tableContent = [
   },
 ];
 
-const list = [
+const firstList = [
   {
     src: "../../icon-blue.png",
     title: "Contests & Promotions",
@@ -41,6 +41,8 @@ const list = [
     content:
       "View customers as personalized connections for long term relationships, rather than transactions",
   },
+];
+const secondList = [
   {
     src: "../../icon-blue.png",
     title: "Insights & Analytics",
@@ -117,7 +119,9 @@ const list = [
             </div>
             <div class="flex py-10 items-center">
               <img width="48px" src="../../icon-blue.png" />
-              <p class="px-4">Acquire consumer data and build meaningful relationships</p>
+              <p class="px-4">
+                Acquire consumer data and build meaningful relationships
+              </p>
             </div>
             <div class="flex py-10 items-center">
               <img width="48px" src="../../icon-blue.png" />
@@ -136,7 +140,7 @@ const list = [
         </div>
       </div>
       <div class="p-24 dropdown-section">
-        <h3 class="font-bold text-blue-600 text-3xl px-24 py-24">SOLUTIONS</h3>
+        <h3 class="font-bold text-blue-600 text-3xl px-24">SOLUTIONS</h3>
         {
           tableContent.map((item, index) => (
             <ContentDropdown item={item} key={index} client:load />
@@ -145,9 +149,16 @@ const list = [
       </div>
       <div class="mp4-viewer h-screen w-auto"></div>
       <div class="list-section text-white">
-        {list.map((item) => <ListItem item={item} />)}
-        <div class="text-center">
-          <h1>Let's get started!</h1>
+        <div>
+          <div class="py-40">
+            {firstList.map((item) => <ListItem item={item} />)}
+          </div>
+          <div class="pb-40">
+            {secondList.map((item) => <ListItem item={item} />)}
+          </div>
+        </div>
+        <div class="text-center flex-cols justify-end w-1/2">
+          <h1 class="py-12">Let's get started!</h1>
           <button class="px-4 py-2 bg-blue-700 rounded-md">Book a demo</button>
         </div>
         <div class="w-full flex">

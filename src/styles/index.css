@@ -66,8 +66,8 @@
 
   .mp4-viewer {
     background-image: url("../images/BG-Fold05.png");
-    background-position: left;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     height: 800px;
   }
 
