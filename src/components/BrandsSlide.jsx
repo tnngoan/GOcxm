@@ -1,52 +1,55 @@
 import "../styles/styles.css";
-import "../styles/brandsSlide.scss";
+import "../styles/brandsSlide.css";
 
 const BrandsSlide = () => {
     return (
         <div className="flex justify-center items-center h-full w-full">
-            <div class="slider">
-                <div class="slide-track">
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            <div className="slider">
+                <div className="slide-track">
+                    <div className="slide">
+                        <img src="../../logo_corby.png" className='bg-contain' height="70" width="150" alt="Corby Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo-cocacola.png" className='bg-contain' height="70" width="150" alt="CocaCola Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo-lionsgate.png" className='bg-contain' height="70" width="150" alt="Lionsgate Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_bacardi.png" className='bg-contain' height="70" width="150" alt="Bacardi Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_flairair.png" className='bg-contain' height="70" width="120" alt="Flairair Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_monster.png" className='bg-contain' height="70" width="80" alt="Monster Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_corby.png" className='bg-contain' height="70" width="150" alt="Corby Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo-cocacola.png" className='bg-contain' height="70" width="150" alt="CocaCola Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo-lionsgate.png" className='bg-contain' height="70" width="150" alt="Lionsgate Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_bacardi.png" className='bg-contain' height="70" width="150" alt="Bacardi Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_flairair.png" className='bg-contain' height="70" width="120" alt="Flairair Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_monster.png" className='bg-contain' height="70" width="80" alt="Monster Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo_corby.png" className='bg-contain' height="70" width="150" alt="Corby Logo" />
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    <div className="slide">
+                        <img src="../../logo-cocacola.png" className='bg-contain' height="70" width="150" alt="CocaCola Logo" />
+                    </div>
+                    <div className="slide">
+                        <img src="../../logo-lionsgate.png" className='bg-contain' height="70" width="150" alt="Lionsgate Logo" />
                     </div>
                 </div>
             </div>
