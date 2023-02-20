@@ -149,30 +149,41 @@ const secondList = [
         }
       </div>
       <div class="mp4-viewer w-auto"></div>
-      <div class="list-section text-white">
+      <div class="list-section text-white py-24">
         <div>
           <div class="py-40">
             {firstList.map((item) => <ListItem item={item} />)}
           </div>
-          <div class="pb-40">
+          <div class="pb-16">
             {secondList.map((item) => <ListItem item={item} />)}
           </div>
         </div>
-        <div class="text-center flex-cols justify-end w-1/2">
-          <h1 class="py-12">Let's get started!</h1>
-          <button class="px-4 py-2 bg-blue-700 rounded-md">Book a demo</button>
-        </div>
-        <div class="w-full flex">
-          <div class="flex items-center">
-            <div class="w-3/5 font-thin">
-              <p class="text-blue-500">TESTIMONIAL</p>
-              <h2 class="font-light">Hear What Others Have To Say</h2>
+        <div class="flex justify-center w-full">
+          <div class="text-white flex items-start justify-start py-10 w-2/5">
+            <div
+              class="flex-cols items-center justify-start w-3/5 text-right float-left"
+            >
+              <h1 class="py-12 text-4xl">Let's get started!</h1>
+              <button class="px-4 py-2 bg-blue-700 rounded-md"
+                >Book a demo</button
+              >
             </div>
-            <div class="w-2/5 py-6">
+            <div class="empty-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="list-section text-white py-24">
+        <div class="w-full flex-cols">
+          <div class="flex items-center justify-center py-24">
+            <div class="w-2/5 font-thin">
+              <p class="header text-2xl font-normal">TESTIMONIALS</p>
+              <h2 class="font-normal text-4xl">Hear What Others Have To Say</h2>
+            </div>
+            <div class="w-1/5 py-6">
               <div class="w-36 h-36">
                 <img src="../../pic-businessman_1.png" />
               </div>
-              <h4 class="header py-6">
+              <h4 class="text-blue-500 py-6">
                 "Out standing benifits for our promotions"
               </h4>
               <p>
@@ -184,38 +195,38 @@ const secondList = [
                 incremental category sales, as well improved performance for our
                 brands.
               </p>
-            </div>
-            <div>
-              <p>Jakob Ripshtein</p>
-              <p class="font-thin">CEO</p>
-              <p>Fluid Assets Inc.</p>
+              <div>
+                <p>Jakob Ripshtein</p>
+                <p class="font-thin">CEO</p>
+                <p>Fluid Assets Inc.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="w-full">
-          <div class="w-3/5"></div>
-          <div class="w-2/5">
-            <div class="flex-cols py-6">
-              <div class="w-36 h-36">
-                <img src="../../pic-businessman_2.png" />
+          <div class="flex items-center justify-center py-24">
+            <div class="w-2/5"></div>
+            <div class="w-1/5">
+              <div class="flex-cols py-6">
+                <div class="w-36 h-36">
+                  <img src="../../pic-businessman_2.png" />
+                </div>
+                <h4 class="text-blue-500 py-6 ">
+                  "Out standing benifits for our promotions"
+                </h4>
+                <p>
+                  We have seen the benefit of the GOcxm platform first-hand with
+                  our brands. The results while on the lift and learn display
+                  outperformed any other promotional activity we have engaged in
+                  to date. We are thoroughly impressed and hope to continue
+                  leveraging this asset with our retail customers to drive
+                  incremental category sales, as well improved performance for
+                  our brands.
+                </p>
               </div>
-              <h4 class="header py-6">
-                "Out standing benifits for our promotions"
-              </h4>
-              <p>
-                We have seen the benefit of the GOcxm platform first-hand with
-                our brands. The results while on the lift and learn display
-                outperformed any other promotional activity we have engaged in
-                to date. We are thoroughly impressed and hope to continue
-                leveraging this asset with our retail customers to drive
-                incremental category sales, as well improved performance for our
-                brands.
-              </p>
-            </div>
-            <div>
-              <p>Jakob Ripshtein</p>
-              <p class="font-thin">CEO</p>
-              <p>Fluid Assets Inc.</p>
+              <div>
+                <p>Jakob Ripshtein</p>
+                <p class="font-thin">CEO</p>
+                <p>Fluid Assets Inc.</p>
+              </div>
             </div>
           </div>
         </div>
