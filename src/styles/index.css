@@ -59,3 +59,7 @@
   background-size: fill;
   background-repeat: no-repeat;
 }
+
+.empty-img {
+  width: '72px';
+}
