@@ -14,7 +14,7 @@ const Sidebar = () => {
                     <div className="w-20 h-20">
                     </div>
                     <div className="form-inline ml-auto">
-                        <div className="w-20 h-auto" onClick={ToggleSidebar} >
+                        <div className="w-14 h-auto" onClick={ToggleSidebar} >
                             <img src='../../icon-burgermenu.png' />
                         </div>
                     </div>

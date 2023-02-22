@@ -9,17 +9,6 @@ const ContentDropdown = (props) => {
     }
     return (
         <div>
-            {/* {
-                <div className="text-white px-24 py-6">
-                    <button className="flex font-bold text-4xl" onClick={handleClick}>{props.item.title}
-                        {isOpen ? <div className="rotate-90 px-4"><i className="fa-solid fa-chevron-right" /></div> : <div className="px-4"><i className="fa-solid fa-chevron-right" /></div>}
-                    </button>
-                    <div className={isOpen ? 'flex' : 'hidden'}>
-                        <p className="text-3xl">{props.item.content}</p>
-                    </div>
-                </div>
-            } */}
-
             {
                 <div className="text-white px-24 py-6">
                     {isOpen ? <button className="flex font-medium text-6xl text-orange-400 " onClick={handleClick}>{props.item.title} <div className="rotate-90 px-4"><i className="fa-solid fa-chevron-right" /></div></button> :
@@ -27,7 +16,7 @@ const ContentDropdown = (props) => {
                     <div className={isOpen ? 'flex' : 'hidden'}>
                         <p className="text-3xl pt-12">{props.item.content}</p>
                     </div>
-                    <hr className="border-white"/>
+                    <hr className="border-white mt-8"/>
                 </div>
             }
         </div>

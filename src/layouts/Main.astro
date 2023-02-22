@@ -2,6 +2,7 @@
 import "../styles/index.css";
 import "../styles/layout.css";
 const title = "GOcxm";
+import Sidebar from "../components/Sidebar";
 ---
 
 <!DOCTYPE html>
@@ -19,11 +20,21 @@ const title = "GOcxm";
     >
 
     <body>
+        <nav class="flex justify-around items-center">
+            <div class="w-32 px-6">
+                <img src="../../GO-Logo_Colour.png" />
+            </div>
+            <Sidebar />
+        </nav>
         <slot />
-        <footer class="footer-background px-12 py-6"> 
+        <footer class="footer-background px-12 py-6">
             <div class="flex justify-between items-end">
                 <div>
-                    <img class="py-4" width="84" src="../../GO-Logo_Black.png" />
+                    <img
+                        class="py-4"
+                        width="84"
+                        src="../../GO-Logo_Black.png"
+                    />
                     <p>670 Calendonia Road, Suite 300</p>
                     <p>Toronto, Ontario</p>
                     <p class="font-semibold">+1 (877) 490-0003</p>
@@ -33,20 +44,26 @@ const title = "GOcxm";
                         <p class="font-medium text-xl">CONNECT WITH GO</p>
                     </div>
                     <div class="flex items-center justify-center gap-4 py-3">
-                        <i class="cursor-pointer fa-2x fa-brands fa-facebook-f"></i>
-                        <i class="cursor-pointer fa-2x fa-brands fa-instagram"></i>
-                        <i class="cursor-pointer fa-2xl fa-brands fa-twitter"></i>
-                        <i class="cursor-pointer fa-2x fa-brands fa-linkedin-in"></i>
+                        <i class="cursor-pointer fa-2x fa-brands fa-facebook-f"
+                        ></i>
+                        <i class="cursor-pointer fa-2x fa-brands fa-instagram"
+                        ></i>
+                        <i class="cursor-pointer fa-2xl fa-brands fa-twitter"
+                        ></i>
+                        <i class="cursor-pointer fa-2x fa-brands fa-linkedin-in"
+                        ></i>
                     </div>
                 </div>
             </div>
             <hr class="border-black py-2" />
             <div class="flex justify-between">
                 <div>
-                    <p class="text-sm ">©2023 gocxm.com All rights reserved.</p>
+                    <p class="text-sm">©2023 gocxm.com All rights reserved.</p>
                 </div>
                 <div class="text-black underline font-medium">
-                    <a class="text-black capitalize" href="/privacy">PRIVACY POLICY</a>
+                    <a class="text-black capitalize" href="/privacy"
+                        >PRIVACY POLICY</a
+                    >
                     <a class="text-black" href="/terms"
                         >ACCESSIBILITY STATEMENT</a
                     >
