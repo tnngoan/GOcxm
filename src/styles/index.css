@@ -46,9 +46,18 @@ body {
   color: white;
 }
 
+/* @media screen and (min-width: 1180px) {
+  .dashboard {
+    background: url("../images/BG-Fold1.png") no-repeat center left;
+    background-size: cover;
+    background-color: #060606;
+  }
+  
+} */
+
 .dashboard {
   max-width: 100%;
-  height: 100vh;
+  height: auto;
   background: url("../images/BG-Fold3smaller.png") no-repeat right bottom;
   background-size: cover;
 }
@@ -65,7 +74,7 @@ body {
   background: url("../images/BG-Fold05.png") center bottom no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: auto  ;
 }
 
 .list-section {
