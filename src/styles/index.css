@@ -49,7 +49,7 @@ body {
 .dashboard {
   max-width: 100%;
   height: 100vh;
-  background: url("../images/BG-Fold3.png") no-repeat left bottom;
+  background: url("../images/BG-Fold3smaller.png") no-repeat right bottom;
   background-size: cover;
 }
 
