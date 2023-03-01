@@ -3,6 +3,8 @@ import "../styles/index.css";
 import "../styles/layout.css";
 const title = "GOcxm";
 import Sidebar from "../components/Sidebar";
+
+let isOpen = false;
 ---
 
 <!DOCTYPE html>
@@ -24,7 +26,7 @@ import Sidebar from "../components/Sidebar";
             <div class="w-32 px-6">
                 <img src="../../GO-Logo_Colour.png" />
             </div>
-            <Sidebar />
+            <Sidebar client:visible isOpen={isOpen} />
         </nav>
         <slot />
         <footer class="footer-background px-12 py-6">
