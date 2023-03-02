@@ -6,6 +6,10 @@ body {
     background-color: #060606;
 }
 
+.bg-black {
+    background-color: #060606;
+}
+
 /* ---Sidebar css */
 .text-primary {
     color: #5a8dee !important;
@@ -21,15 +25,10 @@ body {
     box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
 }
 
-.navbar {
-    /* border-radius: 5px; */
-}
-
 .sidebar {
     width: 280px;
     min-height: 100vh;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
-    background-color: #fff;
     position: fixed;
     top: 0;
     right: -100%;
@@ -87,9 +86,7 @@ body {
     display: inline-block;
     width: 100%;
     padding: 10px 16px;
-    color: #475f7b;
-    background-color: #e5e8ec;
-    border-radius: 4px;
+    color: white;
     cursor: pointer;
     text-decoration: none;
 }

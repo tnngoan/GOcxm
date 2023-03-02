@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Main.astro";
 import "../styles/index.css";
-import Sidebar from "../components/Sidebar.jsx";
 import ContentDropdown from "../components/ContentDropdown.jsx";
 import ListItem from "../components/ListItem.jsx";
 import BrandsStatic from "../components/BrandsStatic";
@@ -149,7 +148,7 @@ const secondList = [
       <div class="mp4-viewer"></div>
       <div class="list-section text-white py-24">
         <div>
-          <div class="py-40">
+          <div class="pt-40">
             {firstList.map((item) => <ListItem item={item} />)}
           </div>
           <div class="pb-16">
@@ -173,11 +172,11 @@ const secondList = [
       <div class="list-section text-white py-24">
         <div class="w-full flex-cols">
           <div class="flex items-center justify-center py-24">
-            <div class="w-2/5 font-thin">
+            <div class="w-1/2 font-thin">
               <p class="header text-2xl font-normal">TESTIMONIALS</p>
               <h2 class="font-normal text-4xl">Hear What Others Have To Say</h2>
             </div>
-            <div class="w-1/5 py-6">
+            <div class="w-1/4 py-6">
               <div class="w-36 h-36">
                 <img src="../../pic-businessman_1.png" />
               </div>
@@ -201,8 +200,8 @@ const secondList = [
             </div>
           </div>
           <div class="flex items-center justify-center py-24">
-            <div class="w-2/5"></div>
-            <div class="w-1/5">
+            <div class="w-1/2"></div>
+            <div class="w-1/4">
               <div class="flex-cols py-6">
                 <div class="w-36 h-36">
                   <img src="../../pic-businessman_2.png" />

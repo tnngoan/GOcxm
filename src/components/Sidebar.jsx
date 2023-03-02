@@ -8,7 +8,6 @@ const Sidebar = (props) => {
     const [isOpen, setIsopen] = useState(false);
     const ToggleSidebar = () => {
         setIsopen(!isOpen);
-        console.log(isOpen);
     }
     return (
         <div className="container-fluid">
@@ -23,16 +22,17 @@ const Sidebar = (props) => {
                     </div>
                 </div>
             </nav>
-            <div className={`sidebar ${isOpen ? 'active' : ''}`}>
-                <div className="sd-header">
-                    <h4 className="mb-0">Sidebar Header</h4>
-                    <div onClick={ToggleSidebar}><FontAwesomeIcon size="2x" icon={faBars} /></div>
+            <div className={`bg-black sidebar ${isOpen ? 'active' : ''}`}>
+                <div className="sd-header p-4">
+                    <div onClick={ToggleSidebar}>
+                        <img width="60px" src="../../GO-Logo_Colour.png" />
+                    </div>
                 </div>
-                <div className="sd-body">
+                <div className="sd-body font-thin text-2xl">
                     <ul>
-                        <li><a className="sd-link" href='/'>Home</a></li>
-                        <li><a className="sd-link" href='/solution'>Solutions</a></li>
-                        <li><a className="sd-link" href='/about'>About</a></li>
+                        <li><a className="sd-link" href='/'>HOME</a></li>
+                        <li><a className="sd-link" href='/solution'>SOLUTIONS</a></li>
+                        <li><a className="sd-link" href='/about'>ABOUT</a></li>
                     </ul>
                 </div>
             </div>
