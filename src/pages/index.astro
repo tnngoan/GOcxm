@@ -57,128 +57,148 @@ const secondList = [
 
 <Layout>
   <div>
-    <div>
-      <div class="pl-20 flex-cols justify-center items-center jumbotron-bg">
-        <h1 class="header-text py-12 pt-44 text-4xl">
-          Empowering Brands with <br />
-          Technology to Build & Personalize <br />
-          Meaningful Relationships
-        </h1>
-        <p class="sub-header-text">
-          A platform that arms you with tools, intelligence and flexibility to <br
-          /> engage, convert, and nurture consumers
-        </p>
-        <div class="pt-16">
-          <button class="p-10 py-2 rounded-lg learn-btn text-white text-xl"
-            >Learn More</button
+    <div class="pl-20 flex-cols justify-center items-center jumbotron-spacing index-jumbo-bg">
+      <h1 class="header-text py-12 pt-44 text-4xl">
+        Empowering Brands with <br />
+        Technology to Build & Personalize <br />
+        Meaningful Relationships
+      </h1>
+      <p class="sub-header-text">
+        A platform that arms you with tools, intelligence and flexibility to <br
+        /> engage, convert, and nurture consumers
+      </p>
+      <div class="pt-16">
+        <button class="jumbo-btn">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-dark">
+      <div
+        class="bg-banner flex-cols justify-around items-center h-auto px-12 py-12 pb-18"
+      >
+        <p class="tiny-text pl-20">TRUSTED BY</p>
+        <BrandsStatic />
+      </div>
+      <div class="sub-jumbotron flex justify-center items-center">
+        <div class="text-center w-2/5 my-16">
+          <h2 class="font-normal text-5xl">
+            New Path to Purchase for The Modern Consumer
+          </h2>
+          <p class="py-10 sub-header-text">
+            Today's consumers expect personalized experiences from brands. The
+            more they are understood, the more engaged and loyal they become.
+          </p>
+          <button
+            class="sub-jumbotron-btn text-white px-4 py-2 rounded-md text-xl font-medium"
+            >Book A Demo</button
           >
         </div>
       </div>
-      <div class="bg-dark">
-        <div
-          class="bg-banner flex-cols justify-around items-center h-auto px-12 py-12 pb-18"
-        >
-          <p class="tiny-text pl-20">TRUSTED BY</p>
-          <BrandsStatic />
-        </div>
-        <div class="sub-jumbotron flex justify-center items-center">
-          <div class="text-center w-2/5 my-16">
-            <h2 class="font-normal text-5xl">
-              New Path to Purchase for The Modern Consumer
-            </h2>
-            <p class="py-10 sub-header-text">
-              Today's consumers expect personalized experiences from brands. The
-              more they are understood, the more engaged and loyal they become.
+    </div>
+    <div class="p-24 dashboard text-2xl">
+      <div class="text-left">
+        <h3 class="header text-5xl font-normal py-4">
+          Amplify Your Engagement
+        </h3>
+        <p class="text-white text-2xl">
+          By integrating a layer of technology into what you’re already doing
+        </p>
+      </div>
+      <div class="text-lg w-2/5">
+        <div class="text-white p-6">
+          <div class="flex py-10 mr-24 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p class="px-4">
+              Amplify your marketing strategy by influencing actions & interests
             </p>
-            <button
-              class="sub-jumbotron-btn text-white px-4 py-2 rounded-md text-xl font-medium"
-              >Book A Demo</button
+          </div>
+          <div class="flex py-10 mr-24 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p class="px-4">
+              Acquire consumer data and build meaningful relationships
+            </p>
+          </div>
+          <div class="flex py-10 mr-24 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p class="px-4">
+              Deliver continuous digital engagement. Drive loyalty, market share
+              & sales
+            </p>
+          </div>
+          <div class="flex py-10 mr-24 items-center">
+            <img width="48px" src="../../icon-blue.png" />
+            <p class="px-4">
+              Enable data driven strategic decisions and to boost ROI and LTV
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-24 dropdown-section">
+      <h3 class="font-bold text-blue-600 text-3xl px-24">SOLUTIONS</h3>
+      {
+        tableContent.map((item, index) => (
+          <ContentDropdown item={item} key={index} client:load />
+        ))
+      }
+    </div>
+    <div class="mp4-viewer"></div>
+    <div class="list-section text-white py-24">
+      <div>
+        <div class="pt-40">
+          {firstList.map((item) => <ListItem item={item} />)}
+        </div>
+        <div class="pb-16">
+          {secondList.map((item) => <ListItem item={item} />)}
+        </div>
+      </div>
+      <div class="flex justify-center w-full">
+        <div class="text-white flex items-start justify-start py-10 w-2/5">
+          <div
+            class="flex-cols items-center justify-start w-3/5 text-right float-left"
+          >
+            <h1 class="py-12 text-4xl">Let's get started!</h1>
+            <button class="px-4 py-2 bg-blue-700 rounded-md">Book a demo</button
             >
           </div>
+          <div class="empty-img"></div>
         </div>
       </div>
-      <div class="p-24 dashboard text-2xl">
-        <div class="text-left">
-          <h3 class="header text-5xl font-normal py-4">
-            Amplify Your Engagement
-          </h3>
-          <p class="text-white text-2xl">
-            By integrating a layer of technology into what you’re already doing
-          </p>
-        </div>
-        <div class="text-lg w-2/5">
-          <div class="text-white p-6">
-            <div class="flex py-10 mr-24 items-center">
-              <img width="48px" src="../../icon-blue.png" />
-              <p class="px-4">
-                Amplify your marketing strategy by influencing actions &
-                interests
-              </p>
+    </div>
+    <div class="list-section text-white py-24">
+      <div class="w-full flex-cols">
+        <div class="flex items-center justify-center py-24">
+          <div class="w-1/2 font-thin">
+            <p class="header text-2xl font-normal">TESTIMONIALS</p>
+            <h2 class="font-normal text-4xl">Hear What Others Have To Say</h2>
+          </div>
+          <div class="w-1/4 py-6">
+            <div class="w-36 h-36">
+              <img src="../../pic-businessman_1.png" />
             </div>
-            <div class="flex py-10 mr-24 items-center">
-              <img width="48px" src="../../icon-blue.png" />
-              <p class="px-4">
-                Acquire consumer data and build meaningful relationships
-              </p>
-            </div>
-            <div class="flex py-10 mr-24 items-center">
-              <img width="48px" src="../../icon-blue.png" />
-              <p class="px-4">
-                Deliver continuous digital engagement. Drive loyalty, market
-                share & sales
-              </p>
-            </div>
-            <div class="flex py-10 mr-24 items-center">
-              <img width="48px" src="../../icon-blue.png" />
-              <p class="px-4">
-                Enable data driven strategic decisions and to boost ROI and LTV
-              </p>
+            <h4 class="text-blue-500 py-6">
+              "Out standing benifits for our promotions"
+            </h4>
+            <p>
+              We have seen the benefit of the GOcxm platform first-hand with our
+              brands. The results while on the lift and learn display
+              outperformed any other promotional activity we have engaged in to
+              date. We are thoroughly impressed and hope to continue leveraging
+              this asset with our retail customers to drive incremental category
+              sales, as well improved performance for our brands.
+            </p>
+            <div>
+              <p>Jakob Ripshtein</p>
+              <p class="font-thin">CEO</p>
+              <p>Fluid Assets Inc.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="p-24 dropdown-section">
-        <h3 class="font-bold text-blue-600 text-3xl px-24">SOLUTIONS</h3>
-        {
-          tableContent.map((item, index) => (
-            <ContentDropdown item={item} key={index} client:load />
-          ))
-        }
-      </div>
-      <div class="mp4-viewer"></div>
-      <div class="list-section text-white py-24">
-        <div>
-          <div class="pt-40">
-            {firstList.map((item) => <ListItem item={item} />)}
-          </div>
-          <div class="pb-16">
-            {secondList.map((item) => <ListItem item={item} />)}
-          </div>
-        </div>
-        <div class="flex justify-center w-full">
-          <div class="text-white flex items-start justify-start py-10 w-2/5">
-            <div
-              class="flex-cols items-center justify-start w-3/5 text-right float-left"
-            >
-              <h1 class="py-12 text-4xl">Let's get started!</h1>
-              <button class="px-4 py-2 bg-blue-700 rounded-md"
-                >Book a demo</button
-              >
-            </div>
-            <div class="empty-img"></div>
-          </div>
-        </div>
-      </div>
-      <div class="list-section text-white py-24">
-        <div class="w-full flex-cols">
-          <div class="flex items-center justify-center py-24">
-            <div class="w-1/2 font-thin">
-              <p class="header text-2xl font-normal">TESTIMONIALS</p>
-              <h2 class="font-normal text-4xl">Hear What Others Have To Say</h2>
-            </div>
-            <div class="w-1/4 py-6">
+        <div class="flex items-center justify-center py-24">
+          <div class="w-1/2"></div>
+          <div class="w-1/4">
+            <div class="flex-cols py-6">
               <div class="w-36 h-36">
-                <img src="../../pic-businessman_1.png" />
+                <img src="../../pic-businessman_2.png" />
               </div>
               <h4 class="text-blue-500 py-6">
                 "Out standing benifits for our promotions"
@@ -192,38 +212,11 @@ const secondList = [
                 incremental category sales, as well improved performance for our
                 brands.
               </p>
-              <div>
-                <p>Jakob Ripshtein</p>
-                <p class="font-thin">CEO</p>
-                <p>Fluid Assets Inc.</p>
-              </div>
             </div>
-          </div>
-          <div class="flex items-center justify-center py-24">
-            <div class="w-1/2"></div>
-            <div class="w-1/4">
-              <div class="flex-cols py-6">
-                <div class="w-36 h-36">
-                  <img src="../../pic-businessman_2.png" />
-                </div>
-                <h4 class="text-blue-500 py-6">
-                  "Out standing benifits for our promotions"
-                </h4>
-                <p>
-                  We have seen the benefit of the GOcxm platform first-hand with
-                  our brands. The results while on the lift and learn display
-                  outperformed any other promotional activity we have engaged in
-                  to date. We are thoroughly impressed and hope to continue
-                  leveraging this asset with our retail customers to drive
-                  incremental category sales, as well improved performance for
-                  our brands.
-                </p>
-              </div>
-              <div>
-                <p>Jakob Ripshtein</p>
-                <p class="font-thin">CEO</p>
-                <p>Fluid Assets Inc.</p>
-              </div>
+            <div>
+              <p>Jakob Ripshtein</p>
+              <p class="font-thin">CEO</p>
+              <p>Fluid Assets Inc.</p>
             </div>
           </div>
         </div>
