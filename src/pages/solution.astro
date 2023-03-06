@@ -43,25 +43,100 @@ const cardsDeck = [
 ---
 
 <Layout>
-    <div class="h-screen">
-        <div class="relative block w-full border-box">
-            <div class="w-full overflow-hidden">
-                <div class="slider relative">
-                    {
-                        cardsDeck.map((item, index) => (
-                            <div class="item relative block float-left border-box">
-                                <div class="frame relative">
-                                    <div class="frame-box front">
-                                        <h1>{item.title}</h1>
-                                    </div>
-                                    <div class="frame-box left" />
-                                    <div class="frame-box right" />
-                                </div>
-                            </div>
-                        ))
-                    }
+    <div>
+        <div class="jumbotron-spacing h-screen">
+            <div
+                class="pl-20 flex-cols justify-center items-center jumbotron-spacing solution-jumbo-bg"
+            >
+                <div class="w-1/4">
+                    <h1 class="header-text py-12 pt-44 text-4xl">
+                        Make your data work for you
+                    </h1>
+                    <p class="sub-header-text">
+                        Amplify your marketing strategy & increase ROI by adding
+                        a layer of technology to what you already do
+                    </p>
+                    <div class="pt-16">
+                        <button class="jumbo-btn">Learn More</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div>
+            <div
+                class="pl-20 flex-cols justify-center items-center jumbotron-spacing index-jumbo-bg"
+            >
+                <div class="w-1/3">
+                    <div>
+                        <h1 class="header-text py-12">
+                            Capture The Heart, Mind, And Wallet Of Your
+                            Customers
+                        </h1>
+                        <p class="sub-header-text">
+                            GOcxm is built on years of direct to consumer
+                            experience, capitalizing on consumer engagement and
+                            retention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center py-20">
+                <div class="w-4/5">
+                    <div class="flex justify-around items-start gap-16">
+                        <div class="w-1/3">
+                            <i
+                                class="w-6 h-6 rounded-full bg-orange-500 p-3 fa-solid fa-heart"
+                            ></i>
+                            <h1 class="header-text">Strategy & Creative</h1>
+                            <p class="sub-header-text">
+                                Add a layer of data driven insights to your
+                                creative commerce
+                            </p>
+                        </div>
+                        <div class="w-1/3">
+                            <i
+                                class="w-6 h-6 rounded-full bg-orange-500 p-3 fa-solid fa-lightbulb"
+                            ></i>
+                            <h1 class="header-text">Data & Customer</h1>
+                            <p class="sub-header-text">
+                                Engage consumers with measurable influence and
+                                motivate action
+                            </p>
+                        </div>
+                        <div class="w-1/3">
+                            <i
+                                class="w-6 h-6 rounded-full bg-orange-500 p-3 fa-solid fa-book"
+                            ></i>
+                            <h1 class="header-text">Sustainable Momentum</h1>
+                            <p class="sub-header-text">
+                                Turn action into personalized engagements for a
+                                long-term loyal relationship
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="h-screen">
+            <div class="relative block w-full border-box">
+                <div class="w-full overflow-hidden">
+                    <div class="slider relative">
+                        {
+                            cardsDeck.map((item, index) => (
+                                <div class="item relative block float-left border-box">
+                                    <div class="frame relative">
+                                        <div class="frame-box front">
+                                            <h1>{item.title}</h1>
+                                        </div>
+                                        <div class="frame-box left" />
+                                        <div class="frame-box right" />
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
 </Layout>

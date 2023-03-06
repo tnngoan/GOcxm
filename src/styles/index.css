@@ -20,6 +20,11 @@ body {
   background-size: cover;
 }
 
+.solution-jumbo-bg {
+  background: url("../images/BG-Fold3smaller.png") no-repeat right center;
+  background-size: cover;
+}
+
 .about-fold3-bg {
   background: url("../images/BG-Fold3.png") no-repeat center center;
   background-size: cover;
